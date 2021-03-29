@@ -1,0 +1,123 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.product-item-image {
+  background-color: $hoverColor;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  img {
+    max-width: 100%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.39);
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+    .product-overlay {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+  .product-overlay {
+    a {
+      @include generalBtn;
+      background: white;
+      color: black;
+      z-index: 20;
+      position: absolute;
+      top: 40%;
+      left: 21%;
+      opacity: 0;
+      &::before {
+        background: $orange;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+.product-detail {
+  background: white;
+  text-align: center;
+  padding-top: 10px;
+  h6 {
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      font-family: $popinsFont;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      color: black;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+  .old-price {
+    text-decoration: line-through;
+    display: inline-block;
+    color: #9b9b9b;
+    margin-right: 10px;
+  }
+  .new-price {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-item-image {
+    .product-overlay {
+      text-align: center;
+      a {
+        left: 35%;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .product-item-image {
+    .product-overlay {
+      text-align: center;
+      a {
+        left: 23%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .product-item-image {
+    .product-overlay {
+      text-align: center;
+      a {
+        left: 34%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .product-item-image {
+    .product-overlay {
+      text-align: center;
+      a {
+        left: 13%;
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+.activeNav {
+  background: #f1efeb !important;
+  transform: scale(1.07); }
+
+header {
+  background: white;
+  height: 88px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999; }
+  header .container .row .col-lg-12 .navbar-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-logo {
+      margin-left: -25px;
+      padding-top: 15px; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-list {
+      display: flex;
+      margin-bottom: 0px; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping {
+        padding: 30px 10px 30px 10px !important;
+        margin-left: 40px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping:hover {
+          background: transparent !important;
+          transform: scale(1) !important; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping a i {
+          font-size: 20px; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item {
+        list-style: none;
+        padding: 30px 30px 30px 30px;
+        transition: all 0.3s ease;
+        overflow: hidden; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item a {
+          text-decoration: none;
+          color: black;
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover {
+          background: #f1efeb;
+          transform: scale(1.07); }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive {
+      cursor: pointer;
+      display: none; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive .navbar-responsive-btn {
+        position: relative;
+        width: 35px;
+        background: black;
+        height: 2px;
+        margin-top: 40px;
+        transition: all 0.3s ease;
+        cursor: pointer; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive .navbar-responsive-btn::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35px;
+          height: 2px;
+          background: black;
+          transform: translateY(12px);
+          transition: all 0.5s ease; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive .navbar-responsive-btn::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35px;
+          height: 2px;
+          background: black;
+          transform: translateY(-12px);
+          transition: all 0.5s ease; }
+    header .container .row .col-lg-12 .navbar-wrapper .open {
+      transition: all 0.5s ease; }
+      header .container .row .col-lg-12 .navbar-wrapper .open .navbar-responsive-btn {
+        transform: translateX(-30px);
+        background: transparent;
+        transition: all 0.5s ease; }
+        header .container .row .col-lg-12 .navbar-wrapper .open .navbar-responsive-btn::before {
+          transform: rotate(45deg) translate(25px, -25px); }
+        header .container .row .col-lg-12 .navbar-wrapper .open .navbar-responsive-btn::after {
+          transform: rotate(-45deg) translate(25px, 25px); }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header .container .row .col-lg-12 .navbar-wrapper {
+    position: relative; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-list {
+      display: flex;
+      flex-direction: column;
+      width: 43%;
+      margin-top: 70px;
+      position: absolute;
+      left: -86px;
+      top: 18px;
+      transition: all 0.3s ease;
+      padding-left: 0px;
+      border-right: 5px solid black;
+      transform: translateX(-400px);
+      background: white; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item {
+        padding: 20px 30px 20px 107px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover {
+          background: #3c6a36;
+          transform: scale(1); }
+          header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover a {
+            color: white; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping {
+        position: absolute;
+        top: -90px;
+        right: 0px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping a:hover {
+          color: black !important; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive {
+      display: block; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  header .container .row .col-lg-12 .navbar-wrapper {
+    position: relative; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-list {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin-top: 70px;
+      position: absolute;
+      left: -111px;
+      top: 18px;
+      transition: all 0.3s ease;
+      padding-left: 0px;
+      border-right: 5px solid black;
+      transform: translateX(-400px);
+      background: white; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item {
+        padding: 20px 30px 20px 107px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item a {
+          margin-left: 25px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover {
+          background: #3c6a36;
+          transform: scale(1); }
+          header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover a {
+            color: white; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping {
+        position: absolute;
+        top: -90px;
+        right: 0px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping a:hover {
+          color: black !important; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive {
+      display: block; } }
+
+@media (max-width: 576px) {
+  header .container .row .col-lg-12 .navbar-wrapper {
+    position: relative; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-logo {
+      margin-left: -10px; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-list {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      margin-top: 70px;
+      position: absolute;
+      left: -111px;
+      top: 18px;
+      transition: all 0.3s ease;
+      padding-left: 0px;
+      border-right: 5px solid black;
+      transform: translateX(-400px);
+      background: white; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item {
+        padding: 20px 30px 20px 107px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item a {
+          margin-left: 40px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover {
+          background: #3c6a36;
+          transform: scale(1); }
+          header .container .row .col-lg-12 .navbar-wrapper .navbar-list .navbar-item:hover a {
+            color: white; }
+      header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping {
+        position: absolute;
+        top: -90px;
+        right: 0px; }
+        header .container .row .col-lg-12 .navbar-wrapper .navbar-list .shopping a:hover {
+          color: black !important; }
+    header .container .row .col-lg-12 .navbar-wrapper .navbar-responsive {
+      display: block; } }
+/*# sourceMappingURL=header.css.map */

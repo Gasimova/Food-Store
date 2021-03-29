@@ -1,0 +1,85 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+
+
+#blog {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container-fluid {
+      .row {
+        .col-lg-4 {
+          .blog-item {
+            border: 1px solid #d7d7d7;
+            transition: all 0.3s ease;
+            padding: 20px;
+            margin-bottom: 30px;
+            &:hover {
+              border-color: transparent;
+              box-shadow: $boxShadow;
+              .blog-body {
+                a {
+                  img {
+                    transform: scale(1.02);
+                  }
+                }
+              }
+            }
+            .blog-header {
+              font-family: $popinsFont;
+              padding: 15px 0px;
+              img {
+                max-width: 100%;
+                border-radius: 50%;
+                margin-left: 25px;
+              }
+              a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.3s ease;
+                margin-left: 11px;
+                &:hover {
+                  color: $responsiveBg;
+                  span {
+                    color: black;
+                    opacity: 0.8;
+                  }
+                }
+                span {
+                  opacity: 0.8;
+                }
+              }
+              p {
+                display: inline-block;
+                color: $responsiveBg;
+                margin-left: 20px;
+              }
+            }
+            .blog-body {
+              overflow: hidden;
+              a {
+                img {
+                  width: 100%;
+                  transition: all 0.3s ease;
+                  transform: scale(1.15);
+                }
+              }
+            }
+            .blog-footer {
+              padding: 20px 20px;
+              a {
+                text-decoration: none;
+                font-family: $popinsFont;
+                color: black;
+                font-weight: 500;
+                transition: all .3s ease;
+                &:hover{
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

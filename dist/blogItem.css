@@ -1,0 +1,53 @@
+#blog {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #blog .container-fluid .row .col-lg-4 .blog-item {
+    border: 1px solid #d7d7d7;
+    transition: all 0.3s ease;
+    padding: 20px;
+    margin-bottom: 30px; }
+    #blog .container-fluid .row .col-lg-4 .blog-item:hover {
+      border-color: transparent;
+      box-shadow: 1px 0px 17px -4px rgba(0, 0, 0, 0.15); }
+      #blog .container-fluid .row .col-lg-4 .blog-item:hover .blog-body a img {
+        transform: scale(1.02); }
+    #blog .container-fluid .row .col-lg-4 .blog-item .blog-header {
+      font-family: "Poppins", sans-serif;
+      padding: 15px 0px; }
+      #blog .container-fluid .row .col-lg-4 .blog-item .blog-header img {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-left: 25px; }
+      #blog .container-fluid .row .col-lg-4 .blog-item .blog-header a {
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease;
+        margin-left: 11px; }
+        #blog .container-fluid .row .col-lg-4 .blog-item .blog-header a:hover {
+          color: #3c6a36; }
+          #blog .container-fluid .row .col-lg-4 .blog-item .blog-header a:hover span {
+            color: black;
+            opacity: 0.8; }
+        #blog .container-fluid .row .col-lg-4 .blog-item .blog-header a span {
+          opacity: 0.8; }
+      #blog .container-fluid .row .col-lg-4 .blog-item .blog-header p {
+        display: inline-block;
+        color: #3c6a36;
+        margin-left: 20px; }
+    #blog .container-fluid .row .col-lg-4 .blog-item .blog-body {
+      overflow: hidden; }
+      #blog .container-fluid .row .col-lg-4 .blog-item .blog-body a img {
+        width: 100%;
+        transition: all 0.3s ease;
+        transform: scale(1.15); }
+    #blog .container-fluid .row .col-lg-4 .blog-item .blog-footer {
+      padding: 20px 20px; }
+      #blog .container-fluid .row .col-lg-4 .blog-item .blog-footer a {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        color: black;
+        font-weight: 500;
+        transition: all .3s ease; }
+        #blog .container-fluid .row .col-lg-4 .blog-item .blog-footer a:hover {
+          color: #eda407; }
+/*# sourceMappingURL=blogItem.css.map */

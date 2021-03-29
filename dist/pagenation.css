@@ -1,0 +1,39 @@
+.product-pagenation {
+  margin-top: 100px; }
+  .product-pagenation ul {
+    display: flex;
+    justify-content: center; }
+    .product-pagenation ul li {
+      list-style: none;
+      box-shadow: 1px 0px 17px -4px rgba(0, 0, 0, 0.15);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 18px; }
+      .product-pagenation ul li:hover {
+        color: #eda407; }
+      .product-pagenation ul li i {
+        font-size: 20px;
+        color: #3c6a36; }
+
+@media (max-width: 576px) {
+  .product-pagenation ul {
+    padding-left: 0px;
+    margin-bottom: 60px; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .product-pagenation ul {
+    padding-left: 0px;
+    margin-bottom: 60px; } }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .product-pagenation ul {
+    padding-left: 0px;
+    margin-bottom: 60px; } }
+/*# sourceMappingURL=pagenation.css.map */

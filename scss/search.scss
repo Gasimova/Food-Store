@@ -1,0 +1,54 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.product-search {
+  position: relative;
+  &::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    position: absolute;
+    top: 9px;
+    right: 35px;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  input {
+    padding: 10px;
+    width: 94%;
+    padding-left: 30px;
+    letter-spacing: 1px;
+    font-family: $popinsFont;
+    border: 1px solid $borderColor;
+
+    &::placeholder {
+      color: black;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .product-search {
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 50px;
+    input{
+      width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .product-search {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 50px;
+    input{
+      width: 100%;
+    }
+  }
+}

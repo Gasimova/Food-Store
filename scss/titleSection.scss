@@ -1,0 +1,69 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+#about {
+    padding-bottom: 100px;
+    .container-fluid {
+      .row {
+        .col-lg-12 {
+          padding-left: 0px;
+          padding-right: 0px;
+          .about-title {
+            background-image: url("../images/bg-breadcrumbs.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: $bgOverlay;
+              width: 100%;
+              height: 300px;
+            }
+            h2 {
+              @include title;
+              position: relative;
+              z-index: 100;
+            }
+            ul {
+              li {
+                list-style: none;
+                font-family: $popinsFont;
+                display: inline-block;
+                margin-right: 25px;
+                a {
+                  text-decoration: none;
+                  color: white;
+                  position: relative;
+                  transition: all 0.3s ease;
+                  &::after {
+                    content: "/";
+                    position: absolute;
+                    top: 0;
+                    left: 60px;
+                    right: 20px;
+                  }
+                  &:hover {
+                    opacity: 0.6;
+                  }
+                }
+              }
+              .light-color {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

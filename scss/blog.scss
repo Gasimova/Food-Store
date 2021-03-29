@@ -1,0 +1,13 @@
+@import "header.scss";
+@import "footer.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "titleSection.scss";
+@import "product.scss";
+@import "blogItem.scss";
+@import "pagenation.scss";
+
+
+.activePage{
+    color: $orange !important;
+}
